@@ -1,3 +1,9 @@
+/* ------------
+ Font awesome 
+--------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
 body{
     font-family: 'Dancing Script', cursive;
     font-family: 'Poppins', sans-serif;
@@ -21,7 +27,7 @@ h1{
 
 }
 .half-width img{
-    width: 80%;
+    width: 60%;
 
 }
 .center{
@@ -32,78 +38,185 @@ h1{
     background-image:linear-gradient(orange,tomato) ;
     padding: 10px 40px;
     color: white;
-    font-weight: 900;
+    font-weight: 00;
     border-radius: 6px;
 }
 
-/* top blogs styles */
-.blogs{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 20px;
+/*-------------
+   Top Phn 
+ --------------*/
+
+ .top-phn {
+  display: flex;
+  justify-content: space-evenly;
 }
-.blog{
-    display: flex;
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  column-gap: 30px;
+  row-gap: 30px;
+  justify-items: center;
+  margin-top: 90px;
+}
+.blog {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-bottom: 18px;
+  width: 300px;
+  height: 426px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+}
+.thumble img {
+  width: 80%;
+}
+.blog-title {
+  font-weight: 700;
+  color: #18191f;
+  font-size: 28px;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+  
+  .checked {
+    color: orange;
+  }
+  
+/*------------------------
+   Final  Highlight
+------------------------- */
+.highlight {
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0;
+}
+.g2 {
+  display: flex;
+  background-color: #f0eeee;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.Final {
+  width: 485px;
+  margin-right: 66px;
 }
 
-.blog .thumnail img{
-     width: 177px;
-     height: 177px;
+.Final-banner {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px black;
+}
 
-}.blog-info{
-    margin-left: 16px;
-
-}
-.blog-title{
-    font-size: 16px;
-}
-.blog-author{
-    color: #9f9f9f;
-    font-size:  16px;
-}
-.blog-author a{
-   text-decoration: none;
-   font-size: #562eff; 
-}
-.half{
-    width: 40%;
-    padding-left: 5%;
-    float: right;
-    margin-left: 2%;
-}
-/* star rating */
-
-.checked {
-  color: orange;
-}
-/* media quearies */
-
-@media  only screen and (max-width:688px) {
-    .container{
-        width: 100%;
-    }
-    .half-width{
-        background-color: red;
-        grid-template-columns: repeat(1,1fr);
-    }
-
-    
-}
 /* footrt  */
 .first-footer {
     background: #111;
     bottom: 0px;
-    width: 100%;
+    
   }
   .copyright {
     text-align: center;
   }
-  .content {
-    width: 50%;
-  }
   .sotial {
-    width: 50%;
+  width: 50%;
+}
+/* footrt  */
+.first-footer {
+  background: #111;
+  bottom: 0px;
+  width: 100%;
+}
+.copyright {
+  text-align: center;
+}
+.content {
+  width: 50%;
+}
+.sotial {
+  width: 50%;
+}
+/*---------------
+   Footer Work 
+-----------------*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fab {
+  /* width: 32px;
+  height: 32px; */
+  font-size: 30px;
+  /* border: 1px solid blue;
+  background: #969bab;
+  border-radius: 16px;
+  align-items: center; */
+}
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 483.87px;
+  margin-top: 20px;
+}
+.social-icons a {
+  margin: 10px;
+}
+.footer-banner img {
+  width: 100%;
+}
+.copyright {
+  font-size: 18px;
+  font-weight: 700;
+}
+.social-icons .fab:hover {
+  color: rgb(211, 23, 23);
+}
+/*---------------
+  Media Quarries 
+----------------*/
+/* --------------------
+  1. MObile Devices
+---------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .half-width{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 5%;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
   }
 
+  .link-buttom{
+    width: 50%;
+  }
+  /* top-phn/ */
+  .blogs{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 
+  }
+  
+   /*------------------------
+   Final Match Highlight
+ ------------------------- */
+ .g2 {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+}
+.Final {
+  width: 100%;
+  margin-bottom: 5%;
+}
 
+}
