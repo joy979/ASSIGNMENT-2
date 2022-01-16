@@ -2,6 +2,9 @@ body{
     font-family: 'Dancing Script', cursive;
     font-family: 'Poppins', sans-serif;
 }
+.main{
+    margin: 10px;
+}
 
 
 h1{
@@ -73,8 +76,34 @@ h1{
 .checked {
   color: orange;
 }
-/* footrt  */
+/* media quearies */
 
+@media  only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .half-width{
+        background-color: red;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
+}
+/* footrt  */
+.first-footer {
+    background: #111;
+    bottom: 0px;
+    width: 100%;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .content {
+    width: 50%;
+  }
+  .sotial {
+    width: 50%;
+  }
 
 
 
